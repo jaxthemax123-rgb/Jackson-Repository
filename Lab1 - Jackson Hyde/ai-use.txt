@@ -1,0 +1,14 @@
+1. AI tool used
+ChatGPT / Codex
+
+2. Questions I asked (summarized)
+- How do I use Bootstrap 5.3 through a CDN, and where do I put the link?
+- What code can I use for the page layout, and what are the different ways to do it?
+- Are there any errors that I made or changes that need to be made to my code to ensure no errors occur?
+- How do I run my project files and start the PHP server in GitHub Codespaces?
+
+3. How AI helped
+ChatGPT explained Bootstrap classes, stylesheet placement, and page layout. It also generated and revised HTML, CSS, and PHP code, helped simplify the code using the course examples, and helped troubleshoot running the project in Codespaces.
+
+4. A suggestion I tested
+ChatGPT suggested opening /request-form.html after starting the PHP server instead of opening only the base address, which showed a 404 error. I tried this, submitted the form, and reached the confirmation page. I also tested a past date and received a validation error.
