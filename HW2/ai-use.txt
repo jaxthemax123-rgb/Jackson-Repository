@@ -1,0 +1,15 @@
+AI tool used
+OpenAI ChatGPT (Codex)
+
+Questions
+1. "how do I place the gift card image and the details side by side"
+2. "How do I resize my headings using clamp()"
+3. "Give me different ways to style paragraphs"
+
+Support related to these questions
+The AI-assisted work explored side-by-side layouts for the gift-card image and details, responsive heading sizes using clamp(), and paragraph styling through CSS classes, colors, font sizes, and spacing.
+
+Suggested changes related to these questions
+- Side-by-side layout: The original version used CSS Grid. This was removed from the class-aligned version because it was not verified in the supplied class examples.
+- Heading sizes: The original clamp() heading rule was replaced with a fixed font size to keep the code simpler and closer to class material.
+- Paragraph styling: Basic class selectors were retained for introductory text and notes. Advanced selectors were removed in favor of simple color, font-size, and margin rules.
