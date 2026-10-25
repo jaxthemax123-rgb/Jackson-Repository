@@ -1,0 +1,34 @@
+AI tool used
+OpenAI ChatGPT (Codex).
+
+Prompts used
+"this is my assignment, I want you complete it."
+The prompt included the full AirAsia Rewards Redemption System HW2 assignment,
+the five required filenames, workflow, HTML/CSS-only restriction, and AI-use
+requirements. Gift_Card_Wireframes.pdf and the AirAsia requirements document
+were supplied as references.
+
+How AI supported the work
+ChatGPT translated the supplied wireframes into five static HTML pages with
+.php extensions and a shared external stylesheet. It reused the gift-card
+images embedded in the supplied PDF, added accessible labels and responsive
+CSS, and checked the required navigation and forms. The two sample cards and
+points match the wireframes. All links intentionally use the same sample
+details page, as permitted by HW2. Customer creation and deletion are outside
+this homework's five-page scope.
+
+Example tested or changed during AI-assisted development
+The static login form uses GET to navigate to card-list.php. Credential name
+attributes were deliberately omitted so the username and password do not
+appear in the URL. The input IDs still connect each label to its input.
+Static HTML checks verified the Login destination and confirmed that the
+credential inputs have no name attributes. Add and Update form actions were
+checked to point to card-list.php. All local link and image targets exist.
+Browser interaction testing is still required in Codespaces; the local
+automated browser could not start because its browser download failed.
+
+Student review
+The code and automated checks were completed with AI assistance. These are
+not a claim that I personally tested the work. Before submission I must run
+all six workflow steps in my own Codespace, review the HTML and CSS, and be
+able to explain the code. Authentication and data persistence are not included.
