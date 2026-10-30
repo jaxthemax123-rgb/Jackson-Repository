@@ -1,9 +1,3 @@
-# Lab 4 Notes
-
-Jackson Hyde
-
-Codespaces link:
-
 ## Part 1: Run the application
 
 I submitted a valid request on `request-form.php`. The form sent the values to `process-request.php`, which validated them and showed "Request received" with my course, request details, topics, and the status "Pending review."
@@ -40,22 +34,22 @@ It is linked in `includes/header.php`.
 ## Part 4: Test validation behavior
 
 **Valid request**
-- Values: IS 6465, 2026-11-05, "I need help reviewing PHP arrays.", Exam review and Practice problems, Afternoon.
-- Result: Accepted.
-- Message: "Request received."
-- Rule: All fields must have valid values.
+- Values entered: IS 6465, 2026-11-05, "I need help reviewing PHP arrays.", Exam review and Practice problems, Afternoon.
+- Accepted or rejected: Accepted.
+- Message displayed: "Request received."
+- Business rule checked: All fields must have valid values.
 
 **Missing or invalid value**
-- Values: IS 6465, 2026-11-05, "Help", Study plan, Afternoon.
-- Result: Rejected.
-- Message: "Describe your request using 10 to 500 characters."
-- Rule: The reason must be 10 to 500 characters.
+- Values entered: IS 6465, 2026-11-05, "Help", Study plan, Afternoon.
+- Accepted or rejected: Rejected.
+- Message displayed: "Describe your request using 10 to 500 characters."
+- Business rule checked: The reason must be 10 to 500 characters.
 
 **Past date**
-- Values: IS 6465, 2026-10-20, "I need help reviewing PHP arrays.", Exam review, Morning.
-- Result: Rejected.
-- Message: "Preferred date cannot be in the past."
-- Rule: The preferred date cannot be in the past.
+- Values entered: IS 6465, 2026-10-20, "I need help reviewing PHP arrays.", Exam review, Morning.
+- Accepted or rejected: Rejected.
+- Message displayed: "Preferred date cannot be in the past."
+- Business rule checked: The preferred date cannot be in the past.
 
 ## Part 5: Review testing and CRUD pages
 
