@@ -1,0 +1,14 @@
+# Test Report
+
+| Test ID | Test | Steps and input | Expected result | Actual result | Status |
+| --- | --- | --- | --- | --- | --- |
+| T01 | Validation test harness | Opened tests/validation-tests.php. | Every test shows PASS (valid data passes; blank name, altered type, zero and negative value, bad points, and bad card IDs fail validation). | All 9 tests showed PASS. | Pass |
+| T02 | View Gift Card List | Opened card-list.php. | All gift cards show with image, Card Name, and Points Required, and each name and image links to card-details.php?card_id=... | All 20 seeded cards showed and the links went to the right details page. | Pass |
+| T03 | View Gift Card Details | Clicked "Pizza Hut $20 Gift Card" (card_id=12). | Read only page shows Card ID, name, type, value, points, and image, with Update, Delete, and Return links. | Showed card 12 with all fields and the three links. | Pass |
+| T04 | Add Gift Card | On card-add.php entered Name "Test Card", Type "Food & Beverage", Value 12.50, Points 125, Image gift-card.png, and submitted. | Card is saved and I'm sent back to card-list.php where it shows up. | Went back to the list and "Test Card" was there. | Pass |
+| T05 | Update Gift Card | From the Test Card details page, clicked Update, changed Name to "Updated Card", Type to Travel, Value to 30, Points to 300, and saved. | Form loads with the old values filled in, and after saving I'm sent to card-details.php showing the new values. | Form was prefilled, and the details page showed the new values after saving. | Pass |
+| T06 | Delete Gift Card | From the Updated Card details page, clicked Delete, checked the card info on the confirm page, and clicked "Yes, Delete Gift Card". | Card is deleted only after the POST confirmation and I'm sent back to card-list.php. | Went back to the list and the card was gone. Opening its old details link said "Gift card not found." | Pass |
+| T07 | Invalid or altered input handling | Submitted card-add.php with a blank name, a Card Type changed to "Hack" in dev tools, Value 0, Points 1.5, and an image of "x.png". Also tried updating a card with Value -1. Also added a card named `Test <b>Card</b> "q"`. | Nothing is saved, the form shows an error message for each bad field, and HTML in a name is shown as plain text. | Add page showed all 5 error messages and nothing was added. Update showed the card value error and nothing changed. The HTML name showed as plain text. | Pass |
+| T08 | Invalid Gift Card identifier handling | Opened card-details.php with card_id=abc, card_id=0, no card_id, and card_id=999. Tried the same on card-update.php and card-delete.php, and sent a delete POST with card_id=abc. | Bad IDs show "Choose a valid gift card." and a missing card shows "Gift card not found." No record changes. | Got the right message every time and no cards changed. | Pass |
+
+No defects were found that needed fixing.

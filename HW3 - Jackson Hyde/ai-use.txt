@@ -1,0 +1,16 @@
+AI tool used
+Claude (Claude Code).
+
+Prompts used
+1. "How do I check in PHP that the Card Value someone typed is a number bigger than 0?"
+2. "HW3 says the form and the saving both happen in card-add.php. How do I make one PHP page show the form and also handle it when it's submitted?"
+3. "In Lab 4 we used 'checked' to keep checkboxes filled in. How do I do that for a dropdown on my update form?"
+
+How AI supported my work
+It showed me how to use filter_var() to check that Card Value is a real number, how to have card-add.php, card-update.php, and card-delete.php show the form and also handle the POST on the same page, and how to keep the right Card Type selected in the dropdown on the update form.
+
+One AI suggestion I tested, revised, or rejected
+For the Card Value check, filter_var() alone still lets 0 and negative numbers through, so I also had to check that the value is greater than 0. I tested it with the zero and negative Card Value tests in validation-tests.php.
+
+How I verified the code and database
+I rebuilt rewards.db from schema.sql and seed.sql and checked it had 5 accounts and 20 gift cards. I ran validation-tests.php and all the tests passed, and I also broke the card value check on purpose to make sure a test would show FAIL. Then I went through list, details, add, update, and delete in the browser, tried bad input and bad card IDs, and wrote down what happened in test-report.md.
