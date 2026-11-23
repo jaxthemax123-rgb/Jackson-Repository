@@ -84,7 +84,7 @@ The admin account was created. The script printed "Administrator account created
 
 ## Part 6: Test the Administrator Workflow
 
-**[TODO: Log in as admin, open Manage Users (screenshot as admin-users.png next to this file) and All Requests, log out, then type /php/requests.php and /php/admin-users.php in the address bar and check both go to login.]**
+**[TODO: Open Manage Users and check you see both accounts. Then Log Out, type /php/requests.php and /php/admin-users.php in the address bar, and check both go to login.]**
 
 I logged in as admin@example.com, opened Manage Users and saw both the admin and the student account. Then I opened All Requests and saw every request, including the student's request and the sample Maria Lopez request. After that I logged out.
 
@@ -103,7 +103,7 @@ admin-users.php (Manage Users), admin-user.php (role and status changes), admin-
 **What happens after logout if a user tries to visit a protected page directly?**
 It sends you back to login.php. I tried going to requests.php and admin-users.php after logging out and both redirected to the login page because requireLogin() didn't find a user_id in the session.
 
-![Administrator user list](admin-users.png)
+![Administrator all requests page](admin-requests.png)
 
 ## Part 7: Trace Registration and Login
 
