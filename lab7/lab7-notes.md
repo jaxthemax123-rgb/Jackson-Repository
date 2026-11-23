@@ -68,7 +68,7 @@ The admin account was created. The script printed "Administrator account created
 
 ## Part 5: Test the Student Workflow
 
-**[TODO: Do every row in the table with the same test data (Test Student, student@example.com, name changed to Test Student Updated, IS 6465 / Exam review / Evening). Take the My Requests screenshot and save it as student-requests.png next to this file.]**
+**[TODO: Click Log Out and check you land on the login page with "You have been logged out".]**
 
 | Test | What I Did | Expected Result | Actual Result | Pass or Fail |
 |---|---|---|---|---|
