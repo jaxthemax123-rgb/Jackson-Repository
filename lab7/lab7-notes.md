@@ -130,8 +130,6 @@ The password hashing and checking happen in userService.php so every page that n
 
 ## Part 8: Run the Automated Tests
 
-**[TODO: In a second terminal, cd lab7 and run the 3 test commands. Check you get 10 PASS, 28 PASS, and 18 PASS / 3 FAIL, and paste your output over this if anything differs.]**
-
 ```
 $ php tests/validation-tests.php
 <p>Valid time: PASS</p><p>Missing time: PASS</p><p>Altered value: PASS</p><p>Multiple valid topics: PASS</p><p>Missing topics: PASS</p><p>Altered topic: PASS</p><p>Minimum length: PASS</p><p>Maximum length: PASS</p><p>Too short: PASS</p><p>Too long: PASS</p>
