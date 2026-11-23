@@ -68,8 +68,6 @@ The admin account was created. The script printed "Administrator account created
 
 ## Part 5: Test the Student Workflow
 
-**[TODO: Click Log Out and check you land on the login page with "You have been logged out".]**
-
 | Test | What I Did | Expected Result | Actual Result | Pass or Fail |
 |---|---|---|---|---|
 | Register student account | Clicked Create Account, entered Test Student, student@example.com, a 12+ character password twice, picked Student | Student account is created | Got "Your account was created and is Active" | Pass |
@@ -83,8 +81,6 @@ The admin account was created. The script printed "Administrator account created
 ![Student request list](student-requests.png)
 
 ## Part 6: Test the Administrator Workflow
-
-**[TODO: Open Manage Users and check you see both accounts. Then Log Out, type /php/requests.php and /php/admin-users.php in the address bar, and check both go to login.]**
 
 I logged in as admin@example.com, opened Manage Users and saw both the admin and the student account. Then I opened All Requests and saw every request, including the student's request and the sample Maria Lopez request. After that I logged out.
 
