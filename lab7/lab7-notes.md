@@ -2,8 +2,6 @@
 
 ## Part 1: Generate the Lab 7 Application
 
-**[TODO: Open includes/auth.php and check requireLogin() against handout section 10 so you can explain the example below.]**
-
 **AI prompt I used:**
 
 > Generate code for all user management use cases UM-01 through UM-10 in the User Management Design Document.
@@ -102,8 +100,6 @@ It sends you back to login.php. I tried going to requests.php and admin-users.ph
 ![Administrator all requests page](admin-requests.png)
 
 ## Part 7: Trace Registration and Login
-
-**[TODO: Nothing to run. Open the files named below and read through them so you can explain the answers.]**
 
 ### Student registration workflow
 
@@ -204,8 +200,6 @@ All three come from the sample data in setup-database.sql, not from the app actu
 
 ## Part 9: Use the AI Skills Pack Process
 
-**[TODO: Read the prompts, responses and evaluations below so you can explain them.]**
-
 ### Application Builder
 
 **Prompt:**
@@ -256,11 +250,8 @@ Using AI helped me follow the code a lot faster since it pointed out which file 
 
 ## Part 10: Inspect the Database
 
-**[TODO: From the lab7 folder run sqlite3 database/tutoring.db, paste the lab query, and check you get the same 2 rows. Then .quit.]**
-
 ```
-sqlite> SELECT u.user_id, u.full_name, u.email, u.role, u.status, s.student_id, s.student_name, s.student_email
-   ...> FROM users AS u LEFT JOIN students AS s ON u.user_id = s.user_id ORDER BY u.user_id;
+sqlite> SELECT u.user_id, u.full_name, u.email, u.role, u.status, s.student_id, s.student_name, s.student_email FROM users AS u LEFT JOIN students AS s ON u.user_id = s.user_id ORDER BY u.user_id;
 user_id  full_name             email                role           status  student_id  student_name          student_email
 -------  --------------------  -------------------  -------------  ------  ----------  --------------------  -------------------
 1        Test Administrator    admin@example.com    Administrator  Active
