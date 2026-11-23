@@ -204,7 +204,7 @@ All three come from the sample data in setup-database.sql, not from the app actu
 
 ## Part 9: Use the AI Skills Pack Process
 
-**[TODO: On the login page press F12, delete the hidden csrf_token value and try to log in. Check you get "Invalid form token" (used in the Test Harness Generator answer). Read the prompts, responses and evaluations below.]**
+**[TODO: Read the prompts, responses and evaluations below so you can explain them.]**
 
 ### Application Builder
 
